@@ -20,6 +20,10 @@ jobs:
 
       - name: Force Failure
         run: go test . -cover
-        
-      - name: Force Failure
+  format:
+    name: Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Format code
         run: test -z $(go fmt .)
