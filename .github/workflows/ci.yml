@@ -20,3 +20,6 @@ jobs:
 
       - name: Force Failure
         run: go test . -cover
+        
+      - name: Force Failure
+        run: test -z $(go fmt .)
